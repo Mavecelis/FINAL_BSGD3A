@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Mave Jade Portfolio </title>
+
+    <!-- add swiper js cdn link -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- add swiper css cdn link -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="shortcut icon" href="imgs\logoicon.ico"/>
+
+    <!-- box icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#home" class="logo"><img class="logoicon" src="imgs\logoicon.ico" alt="Mj logo"></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#profile">Profile</a>
+                <a href="#skills">Skills</a>
+                <a href="#artworks">Works</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1><span>Hi,<br> I'm Mave </span></h1>
+            <div class="text-animate">
+                <h3>Graphic Designer </h3>
+            </div>
+            <p> </p>
+            <div class="home-sci">
+                <a href="https://www.facebook.com/mavejade.celis.9/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/mjadeclis/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.tiktok.com/@m.jade_clis"><i class='bx bxl-tiktok'></i></a>
+            </div><br>
+        </div>
+
+       
+        <div class=""></div>
+    </section>
+
+    <div class="body">
+
+        
+
+        <!-- about section design -->
+        <section class="profile" id="profile">
+            <h2 class="heading">About <span>Me</span></h2>
+
+            <div class="profile-row">
+                <div class="profile-column">
+
+                    <div class="profile-box">
+                        <div class="profile-content">
+                        <div classs=".about-img">
+                                <img class="mySlides" src="imgs\me1.jpg" > 
+                                <img class="mySlides" src="imgs\me2.jpg" > 
+                                <img class="mySlides" src="imgs\me3.jpg" >
+                                <img class="mySlides" src="imgs\me4.jpg" >
+                                <img class="mySlides" src="imgs\me5.jpg" >
+                                <span class="circle-spin"></span>
+                            </div><br><br>
+
+                            <script>
+                                var myIndex = 0;
+                                carousel();
+                                
+                                function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";  
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {myIndex = 1}    
+                                x[myIndex-1].style.display = "block";  
+                                setTimeout(carousel, 1000); // Change image every 2 seconds
+                                }
+                                </script>
+
+                            <div class="aboutme">
+                                <h3>I'm Mave Jade R. Celis </h3>
+                                <p>"Skilled in magazine layout designing , creating a poster, and designing packaging for a product. 
+                                    Proficient in creating logos and  create visual concepts that communicate ideas and messages." </p>
+                            </div>   
+    
+                        <center><br><br><img src="imgs\location.png" class="bb"></img> &nbsp; Cebu City, Cebu, Phillipines<br>
+                        <img src="imgs\gmail.png" class="bb"></img> &nbsp; celismavejade2000@gmail.com<br>
+                        <img src="imgs\call.png" class="bb"></img> &nbsp; 0981 514 0076<br><br></center>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-column">
+                    <div class="profile-box">
+
+                        <div class="profile-content">
+
+                            <div class="about-content">
+                                <h3>♡ Educational Background</h3>
+                            </div><br><br><br>
+                        <div classs=".about-img">
+                            
+                                <div class="schools">
+                                    <img class="skillss" src="imgs\mambaling.png">
+                                    <div class="year"><br><br><br><i class='bx bxs-calendar'></i><bold>2007 - 2014</bold></div>
+                                    <p><br><br><br><br>Mambaling Elementary School <br>Mambaling, Cebu City, Cebu </p> 
+                                </div>       
+
+                                <div class="schools">
+                                    <img class="skillss" src="imgs\highschool.jpg">
+                                    <div class="year"><br><br><br><i class='bx bxs-calendar'></i><bold>2014 - 2018</bold></div>
+                                    <p><br><br><br><br>Abellana National High School <br> Osmeña Blvd, Cebu City, Cebu</p>
+                                </div>
+
+                                <div class="schools">
+                                    <img class="skillss" src="imgs\highschool.jpg">
+                                    <div class="year"><br><br><br><i class='bx bxs-calendar'></i><bold>2018 - 2020</bold></div>
+                                    <p><br><br><br><br>ICT - Computer System Servicing <br> Abellana National High School <br> Osmeña Blvd, Cebu City, Cebu</p>
+                                </div>
+
+                                <div class="schools">
+                                    <img class="skillss" src="imgs\ctu.png">
+                                    <div class="year"><br><br><br><i class='bx bxs-calendar'></i><bold>2020 - 2024</bold></div>
+                                    <p><br><br><br><br>Bachelor of Science in Graphics Art and Design <br> Cebu Technological University - Main Campus <br> M..J. Cuenco Ave. Cor R. Palma Street, Cebu</p>
+                                </div>
+
+                            </div><br><br>
+                    
+
+                        </div>      
+
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading"><br> Mastered<span>Skills<br></span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title"><br><br>Language Fluency</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Visaya <span>100%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Tagalog <span>100%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>English <span>100%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Nihongo <span>15%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+               
+                <h3 class="title"><br><br>Visual Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Animation Software <span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Film & Photography Production <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Drawing, Painting & Sculpture <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Computer Programming <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title"><br><br>Software Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                    
+                    <div classs=".about-img"><center>
+                        <img class="skillapp" src="imgs\blender.jpg">
+                        <img class="skillapp" src="imgs\autodesk.png">
+                        <img class="skillapp" src="imgs\Photoshop.png">
+                        <img class="skillapp" src="imgs\msword.jpg"></center>
+                        </div><br><br>
+
+                    </div>
+                </div><br>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- artworks section design -->
+    <section class="artworks" id="artworks">
+        <h2 class="heading">  <span></span></h2>
+        <div class="row"> 
+            <div class="column">
+              <img src="imgs\3d1.png" style="width:100%">
+              <img class="gd" src="imgs\gd15.png"  alt="Northern Lights">
+              <img src="imgs\3d2.png" style="width:100%">
+              <img src="imgs\3d3.png" style="width:100%">
+              <img class="gd" src="imgs\gd13.png" alt="Cinque Terre" >
+              
+              
+              <video controls>
+                <source src="imgs\vid1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video> 
+              <img class="" src="imgs\12.jpg" alt="Northern Lights"  style="border-radius:20px;">
+              
+              <img class="" src="imgs\14.jpg" alt="Northern Lights"  >
+            </div>
+
+            <div class="column">
+                <img class="" src="imgs\8.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                <img src="imgs\3d7.png" style="width:100%">
+                <img src="imgs\3d4.png" style="width:100%">
+                <video controls>
+                    <source src="imgs\vid2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                  <img src="imgs\3d5.png" style="width:100%">
+                <img src="imgs\3d6.png" style="width:100%">
+                <img class="" src="imgs\gd12.png" alt="lisa" style="border-radius:20px;">
+               
+                <img class="" src="imgs\4.jpg" alt="Northern Lights"  style="border-radius:20px;">
+            </div> 
+
+            <div class="column">
+                <img class="" src="imgs\2.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                <img class="" src="imgs\10.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                <img class="" src="imgs\1.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                <img class="" src="imgs\gd17.png" alt="Mountains"   style="border-radius:20px;">
+                <img class="" src="imgs\5.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                
+                <img class="" src="imgs\gd11.jpg" alt="Northern Lights" style="border-radius:20px;">
+                <img class="gd" src="imgs\gd14.png"  alt="Forest">
+                <video controls>
+                    <source src="imgs\vid3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                
+            </div>
+
+            <div class="column">
+                <img class="" src="imgs\9.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                <img class="" src="imgs\11.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                <img class="" src="imgs\gd1.png" alt="Mountains"   style="border-radius:20px;">
+                <img class="" src="imgs\3.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                <img class="" src="imgs\13.jpg" alt="Northern Lights"  style="border-radius:20px;">
+                <video controls>
+                    <source src="imgs\vid4.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <img class="" src="imgs\gd16.png" alt="Mountains"   style="border-radius:20px;">
+              <img class="" src="imgs\6.jpg" alt="Northern Lights"  style="border-radius:20px;">
+              <img class="" src="imgs\7.jpg" alt="Northern Lights"  style="border-radius:20px;">
+            </div>
+          </div>
+        
+    </section>
+
+        <!-- footer design -->
+    <footer class="footer">
+        
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by MCB | For Educational Purposes & All rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    </div>
+
+    
+    
+</body>
+
+</html>
